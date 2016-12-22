@@ -1,0 +1,11 @@
+.home{
+	color:red;
+	.black{
+		color: black;
+	}
+}
+.page{
+	.black{
+		color:gray;
+	}
+}

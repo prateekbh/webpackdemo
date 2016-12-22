@@ -77,7 +77,9 @@ webpackJsonp([0],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(179);
+	var _home = __webpack_require__(179);
+
+	var _home2 = _interopRequireDefault(_home);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -101,11 +103,11 @@ webpackJsonp([0],{
 			value: function render() {
 				return _react2.default.createElement(
 					'h1',
-					{ className: 'home' },
+					{ className: _home2.default.home },
 					'Hello ',
 					_react2.default.createElement(
 						'span',
-						{ className: 'black' },
+						{ className: _home2.default.black },
 						'world'
 					)
 				);
@@ -134,8 +136,8 @@ webpackJsonp([0],{
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js?!./../node_modules/postcss-loader/index.js!./home.css", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js?!./../node_modules/postcss-loader/index.js!./home.css");
+			module.hot.accept("!!./../node_modules/css-loader/index.js?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!./../node_modules/postcss-loader/index.js!./home.css", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!./../node_modules/postcss-loader/index.js!./home.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -154,10 +156,14 @@ webpackJsonp([0],{
 
 
 	// module
-	exports.push([module.id, ".home{\n\tcolor:red;\n}\n.home .black{\n\tcolor: black;\n}", ""]);
+	exports.push([module.id, ".home__home___pLgF4{\n\tcolor:red;\n}\n.home__home___pLgF4 .home__black___Xb15R{\n\tcolor: black;\n}\n.home__page___rHj1l .home__black___Xb15R{\n\tcolor:gray;\n}", ""]);
 
 	// exports
-
+	exports.locals = {
+		"home": "home__home___pLgF4",
+		"black": "home__black___Xb15R",
+		"page": "home__page___rHj1l"
+	};
 
 /***/ },
 
